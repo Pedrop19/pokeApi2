@@ -19,7 +19,7 @@
     height: 500px;
     border: 20px solid #EEBD08;
     border-radius: 10px;
-    background-color: rgb(62, 123, 2);
+    background: linear-gradient(14deg, rgb(165, 205, 83) 60%, rgb(193, 217, 144) 65%);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -91,15 +91,12 @@
 }
 
 .types{
-    background: #AFAFAF;
     width: 310px;
     height: 9.9%;
     display: flex;
     padding: 30px;
     justify-content: center;
-    border: 1px solid #000;
     font-size: 21px;
-
 }
 
 .type, .type2 {

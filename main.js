@@ -1,4 +1,4 @@
-let numeroRandom = Math.floor(Math.random() * 100) + 1;
+let numeroRandom = Math.floor(Math.random() * 1000) + 1;
 
 const pokemonAPI = "https://pokeapi.co/api/v2/pokemon/" + numeroRandom + "/";
 const divImageElement = document.querySelector(".imagen");
@@ -20,9 +20,8 @@ fetch(pokemonAPI)
     console.log(data);
     nombreElement.innerHTML = data.name;
     elementoImagen.src = data.sprites.front_default;
-    idElement.innerHTML = data.id;
+    idElement.innerHTML = "#" + data.id;
     tipoTextElement.innerHTML = data.types[0].type.name;
-    cardElement.classList.add(data.types[0].type.name);
     if(data.types.length == 1){
       tipoTextElement2.innerHTML = "";
       tipoElement2.classList.add("hide");
@@ -34,5 +33,5 @@ fetch(pokemonAPI)
     tipoElement.classList.add(data.types[0].type.name);
 
     
-    hpElement.innerHTML = data.stats[0].base_stat;
+    hpElement.innerHTML = data.stats[0].base_stat + "<span> HP</span>";
   }); 
