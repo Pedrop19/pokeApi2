@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mali', cursive;
+}
+
+.card{
+    width: 350px;
+    height: 500px;
+    border: 20px solid #EEBD08;
+    border-radius: 10px;
+    background-color: rgb(62, 123, 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+#pokemon-name{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-display: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 30px;
+} 
+
+.card-header span{
+    color: red;
+}
+
+.imagen{
+    width: 80%;
+    height: 50%;
+    border: 10px solid #EEBD08;
+    box-shadow: 0px 0px 10px 0px #000;
+    margin-left: 10%;
+    margin-top: -30px;
+}
+
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caracteristicas{
+    background-color: #EEBD08;
+    width: max-content;
+    padding: 0px 10px;
+    text-align: center;
+    margin-left: 15%;
+    margin-top: -14px;
+    border-radius: 10px;
+}
+
+.atacks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.atacks p{
+    color: #fff;
+    font-size: 20px;
+}
+
+.debilidades_fuertes{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    margin-bottom: 10px;
+}
+
+.types{
+    background: #AFAFAF;
+    width: 310px;
+    height: 9.9%;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    border: 1px solid #000;
+    font-size: 21px;
+
+}
+
+.type, .type2 {
+    color: rgba(0, 0, 0, 0.9);
+    text-transform: capitalize;
+    font-size: 1.25em;
+    padding: 2px;
+    margin: 2px;
+    border: groove #757575 3px;
+    border-radius: 10px;
+    width: 150px;
+    font-family: "Staatliches", cursive;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: rgba(255, 255, 255, 0.3) -1px 1px;
+    align-self: center;
+    background: linear-gradient( 15deg, rgba(128, 128, 128, 0.5) 64%, rgba(138, 138, 138, 0.5) 70%, rgba(230, 230, 230, 0.5) 81%, rgba(255, 255, 255, 0.5) 86%, rgba(220, 220, 220, 0.5) 89%, rgba(230, 230, 230, 0.5) 100% );
+    background-blend-mode: hard-light;
+}
+
+.normal {
+    background-color: #bfbfbf;
+}
+.fighting {
+    background-color: #d87c58;
+}
+.flying {
+    background-color: #999ade;
+}
+.poison {
+    background-color: #925192;
+}
+.ground {
+    background-color: #dea761;
+}
+.rock {
+    background-color: #897864;
+}
+.bug {
+    background-color: #b1c967;
+}
+.ghost {
+    background-color: #c195dc;
+}
+.steel {
+    background-color: #49769c;
+}
+.fire {
+    background-color: #cf1414;
+}
+.water {
+    background-color: #1689de;
+}
+.grass {
+    background-color: #47a047;
+}
+.electric {
+    background-color: #e6b700;
+}
+.psychic {
+    background-color: #fa43b8;
+}
+.ice {
+    background-color: #98c3de;
+}
+.dragon {
+    background-color: #89315d;
+}
+.dark {
+    background-color: #282433;
+}
+.fairy {
+    background-color: #dca0ce;
+}
+.unknown {
+    background-color: #545454;
+}
+.shadow {
+    background-color: #364163;
+}
+.hide{
+    display: none;
+}
